@@ -24,7 +24,7 @@ export default function Header() {
       <div className="flex items-center">
         <button
           onClick={() => handleNavigation('#home')}
-          className="flex items-center hover:text-gradient-logo hover:underline-gradient-logo transition duration-300 focus:outline-none"
+          className="bg-slate-900 flex items-center hover:text-gradient-logo hover:underline-gradient-logo transition duration-300 focus:outline-none"
         >
           <img src={Logo} alt="Netlab Logo" className="h-11 mr-4" />
           <h1 className="text-xl font-bold">Network Laboratory</h1>
@@ -35,38 +35,38 @@ export default function Header() {
       <nav className="hidden lg:flex space-x-6 items-center">
         <button
           onClick={() => handleNavigation('#sbd')}
-          className="hover:text-gradient-sbd hover:underline-gradient transition duration-300 font-bold focus:outline-none"
+          className="bg-slate-900 hover:text-gradient-sbd hover:underline-gradient transition duration-300 font-bold focus:outline-none"
         >
           Sistem Basis Data
         </button>
         <button
           onClick={() => handleNavigation('#dmj')}
-          className="hover:text-gradient-dmj hover:underline-gradient transition duration-300 font-bold focus:outline-none"
+          className="bg-slate-900 hover:text-gradient-dmj hover:underline-gradient transition duration-300 font-bold focus:outline-none"
         >
           Desain dan Manajemen Jaringan
         </button>
         <button
           onClick={() => handleNavigation('#os')}
-          className="hover:text-gradient-os hover:underline-gradient transition duration-300 font-bold focus:outline-none"
+          className="bg-slate-900 hover:text-gradient-os hover:underline-gradient transition duration-300 font-bold focus:outline-none"
         >
           Sistem Operasi
         </button>
       </nav>
 
       {/* Hamburger Menu */}
-      <button onClick={toggleMenu} className="focus:outline-none lg:hidden">
+      <button onClick={toggleMenu} className="bg-slate-900 focus:outline-none lg:hidden">
         <img src={isMenuOpen ? Cross : HamburgerMenu} alt="Menu Icon" className="h-8" />
       </button>
 
       {/* Dropdown Menu */}
       {isMenuOpen && (
-        <div className="absolute top-16 right-0 bg-gray-950 text-white rounded shadow-lg overflow-hidden transition-all duration-300">
+        <div className="absolute top-24 right-0 bg-black text-white rounded shadow-lg overflow-hidden transition-all duration-300 flex flex-col items-center space-y-4 py-4">
           <button
             onClick={() => {
               handleNavigation('#sbd')
               toggleMenu()
             }}
-            className="block px-6 py-3 text-lg font-bold hover:text-gradient-sbd hover:underline-gradient transition duration-300 focus:outline-none"
+            className="bg-slate-900 block px-6 py-3 text-lg font-bold hover:text-gradient-sbd hover:underline-gradient transition duration-300 focus:outline-none rounded"
           >
             Sistem Basis Data
           </button>
@@ -75,7 +75,7 @@ export default function Header() {
               handleNavigation('#dmj')
               toggleMenu()
             }}
-            className="block px-6 py-3 text-lg font-bold hover:text-gradient-dmj hover:underline-gradient transition duration-300 focus:outline-none"
+            className="bg-slate-900 block px-6 py-3 text-lg font-bold hover:text-gradient-dmj hover:underline-gradient transition duration-300 focus:outline-none rounded"
           >
             Desain dan Manajemen Jaringan
           </button>
@@ -84,7 +84,7 @@ export default function Header() {
               handleNavigation('#os')
               toggleMenu()
             }}
-            className="block px-6 py-3 text-lg font-bold hover:text-gradient-os hover:underline-gradient transition duration-300 focus:outline-none"
+            className="bg-slate-900 block px-6 py-3 text-lg font-bold hover:text-gradient-os hover:underline-gradient transition duration-300 focus:outline-none rounded"
           >
             Sistem Operasi
           </button>

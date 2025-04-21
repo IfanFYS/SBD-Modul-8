@@ -68,7 +68,7 @@ export default function Content() {
           className="h-60 mb-3 logo-hover"
           onClick={() => handleNavigation('#home')} // Navigasi ke Home
         />
-        <h1 className="text-4xl font-bold mb-6">
+        <h1 className="text-center text-4xl font-bold mb-6">
           {typewriterText}
           <span className="blinking-cursor">|</span>
         </h1>
@@ -86,21 +86,19 @@ export default function Content() {
         className="snap-start flex flex-col justify-center items-center bg-gray-900 text-white h-screen"
         onMouseEnter={() => setCurrentPage('sbd')}
       >
-        <h2 className="text-3xl font-bold mb-8 text-center">
-          {typewriterText}
-          <span className="blinking-cursor">|</span>
-        </h2>
-        <div className="flex items-center space-x-8 max-w-5xl">
+        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
+          {/* Logo */}
           <img
             src={SBDLogo}
             alt="SBD Logo"
             className="h-40 logo-hover"
             onClick={() => handleNavigation('#sbd')} // Navigasi ke SBD
           />
+
           {/* Teks Box */}
-          <div className="flex space-x-6 w-full">
+          <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 w-full">
             {/* Keterangan */}
-            <div className="bg-gray-950 p-6 rounded-lg shadow-md w-1/2 text-left">
+            <div className="bg-gray-950 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
               <h3 className="text-2xl font-semibold mb-4">Keterangan</h3>
               <p className="mb-2">Kode MK: ENCE604016</p>
               <p className="mb-2">Semester: 4</p>
@@ -113,7 +111,7 @@ export default function Content() {
             </div>
 
             {/* Komponen Penilaian */}
-            <div className="bg-gray-950 p-6 rounded-lg shadow-md w-1/2 text-left">
+            <div className="bg-gray-950 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
               <h3 className="text-2xl font-semibold mb-4">Komponen Penilaian</h3>
               <p className="mb-2">
                 Praktikum ini terdiri dari beberapa bagian per modul. Bobot penilaian modul pada umumnya memiliki komponen sebagai berikut:
@@ -135,21 +133,19 @@ export default function Content() {
         className="snap-start flex flex-col justify-center items-center bg-gray-800 text-white h-screen"
         onMouseEnter={() => setCurrentPage('dmj')}
       >
-        <h2 className="text-3xl font-bold mb-8 text-center">
-          {typewriterText}
-          <span className="blinking-cursor">|</span>
-        </h2>
-        <div className="flex items-center space-x-8 max-w-5xl">
+        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
+          {/* Logo */}
           <img
             src={DMJLogo}
             alt="DMJ Logo"
             className="h-40 logo-hover"
             onClick={() => handleNavigation('#dmj')} // Navigasi ke DMJ
           />
+
           {/* Teks Box */}
-          <div className="flex space-x-6 w-full">
+          <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 w-full">
             {/* Keterangan */}
-            <div className="bg-gray-900 p-6 rounded-lg shadow-md w-1/2 text-left">
+            <div className="bg-gray-900 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
               <h3 className="text-2xl font-semibold mb-4">Keterangan</h3>
               <p className="mb-2">Kode MK: ENCE604014</p>
               <p className="mb-2">Semester: 4</p>
@@ -162,7 +158,7 @@ export default function Content() {
             </div>
 
             {/* Komponen Penilaian */}
-            <div className="bg-gray-900 p-6 rounded-lg shadow-md w-1/2 text-left">
+            <div className="bg-gray-900 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
               <h3 className="text-2xl font-semibold mb-4">Komponen Penilaian</h3>
               <p className="mb-2">
                 Praktikum ini terdiri dari beberapa bagian per modul. Bobot penilaian modul pada umumnya memiliki komponen sebagai berikut:
@@ -184,21 +180,19 @@ export default function Content() {
         className="snap-start flex flex-col justify-center items-center bg-gray-700 text-white h-screen"
         onMouseEnter={() => setCurrentPage('os')}
       >
-        <h2 className="text-3xl font-bold mb-8 text-center">
-          {typewriterText}
-          <span className="blinking-cursor">|</span>
-        </h2>
-        <div className="flex items-center space-x-8 max-w-5xl">
+        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
+          {/* Logo */}
           <img
             src={OSLogo}
             alt="OS Logo"
             className="h-40 logo-hover"
             onClick={() => handleNavigation('#os')} // Navigasi ke OS
           />
+
           {/* Teks Box */}
-          <div className="flex space-x-6 w-full">
+          <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 w-full">
             {/* Keterangan */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md w-1/2 text-left">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
               <h3 className="text-2xl font-semibold mb-4">Keterangan</h3>
               <p className="mb-2">Kode MK: ENCE604018</p>
               <p className="mb-2">Semester: 4</p>
@@ -211,7 +205,7 @@ export default function Content() {
             </div>
 
             {/* Komponen Penilaian */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md w-1/2 text-left">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
               <h3 className="text-2xl font-semibold mb-4">Komponen Penilaian</h3>
               <p className="mb-2">
                 Praktikum ini terdiri dari beberapa bagian per modul. Bobot penilaian modul pada umumnya memiliki komponen sebagai berikut:

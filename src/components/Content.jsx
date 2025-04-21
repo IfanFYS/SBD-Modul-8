@@ -86,25 +86,31 @@ export default function Content() {
         className="snap-start flex flex-col justify-center items-center bg-gray-900 text-white h-screen"
         onMouseEnter={() => setCurrentPage('sbd')}
       >
-        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
-          {/* Logo */}
-          <img
-            src={SBDLogo}
-            alt="SBD Logo"
-            className="h-40 logo-hover"
-            onClick={() => handleNavigation('#sbd')} // Navigasi ke SBD
-          />
+        {/* Logo */}
+        <img
+          src={SBDLogo}
+          alt="SBD Logo"
+          className="h-40 logo-hover mb-4"
+          onClick={() => handleNavigation('#sbd')} // Navigasi ke SBD
+        />
 
+        {/* Judul */}
+        <h2 className="text-center text-4xl sm:text-2xl font-bold mb-6">
+          {typewriterText}
+          <span className="blinking-cursor">|</span>
+        </h2>
+
+        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
           {/* Teks Box */}
           <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 w-full">
             {/* Keterangan */}
             <div className="bg-gray-950 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
-              <h3 className="text-2xl font-semibold mb-4">Keterangan</h3>
-              <p className="mb-2">Kode MK: ENCE604016</p>
-              <p className="mb-2">Semester: 4</p>
-              <p className="mb-2">Jumlah SKS: 3 SKS</p>
-              <p className="mb-2">Dosen Pengampu:</p>
-              <ul className="list-disc list-inside">
+              <h3 className="text-2xl sm:text-xl font-semibold mb-4">Keterangan</h3>
+              <p className="mb-2 text-lg sm:text-sm">Kode MK: ENCE604016</p>
+              <p className="mb-2 text-lg sm:text-sm">Semester: 4</p>
+              <p className="mb-2 text-lg sm:text-sm">Jumlah SKS: 3 SKS</p>
+              <p className="mb-2 text-lg sm:text-sm">Dosen Pengampu:</p>
+              <ul className="list-disc list-inside text-lg sm:text-sm">
                 <li>I Gde Dharma Nugraha, S.T., M.T., Ph.D.</li>
                 <li>Yan Maraden, S.T., M.T.</li>
               </ul>
@@ -112,11 +118,11 @@ export default function Content() {
 
             {/* Komponen Penilaian */}
             <div className="bg-gray-950 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
-              <h3 className="text-2xl font-semibold mb-4">Komponen Penilaian</h3>
-              <p className="mb-2">
+              <h3 className="text-2xl sm:text-xl font-semibold mb-4">Komponen Penilaian</h3>
+              <p className="mb-2 text-lg sm:text-sm">
                 Praktikum ini terdiri dari beberapa bagian per modul. Bobot penilaian modul pada umumnya memiliki komponen sebagai berikut:
               </p>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside text-lg sm:text-sm">
                 <li>[15%] Tugas Pendahuluan</li>
                 <li>[10%] Pre-Test</li>
                 <li>[50%] Case Study</li>
@@ -133,25 +139,31 @@ export default function Content() {
         className="snap-start flex flex-col justify-center items-center bg-gray-800 text-white h-screen"
         onMouseEnter={() => setCurrentPage('dmj')}
       >
-        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
-          {/* Logo */}
-          <img
-            src={DMJLogo}
-            alt="DMJ Logo"
-            className="h-40 logo-hover"
-            onClick={() => handleNavigation('#dmj')} // Navigasi ke DMJ
-          />
+        {/* Logo */}
+        <img
+          src={DMJLogo}
+          alt="DMJ Logo"
+          className="h-40 logo-hover mb-4"
+          onClick={() => handleNavigation('#dmj')} // Navigasi ke DMJ
+        />
 
+        {/* Judul */}
+        <h2 className="text-center text-4xl sm:text-2xl font-bold mb-6">
+          {typewriterText}
+          <span className="blinking-cursor">|</span>
+        </h2>
+
+        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
           {/* Teks Box */}
           <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 w-full">
             {/* Keterangan */}
             <div className="bg-gray-900 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
-              <h3 className="text-2xl font-semibold mb-4">Keterangan</h3>
-              <p className="mb-2">Kode MK: ENCE604014</p>
-              <p className="mb-2">Semester: 4</p>
-              <p className="mb-2">Jumlah SKS: 3 SKS</p>
-              <p className="mb-2">Dosen Pengampu:</p>
-              <ul className="list-disc list-inside">
+              <h3 className="text-2xl sm:text-xl font-semibold mb-4">Keterangan</h3>
+              <p className="mb-2 text-lg sm:text-sm">Kode MK: ENCE604014</p>
+              <p className="mb-2 text-lg sm:text-sm">Semester: 4</p>
+              <p className="mb-2 text-lg sm:text-sm">Jumlah SKS: 3 SKS</p>
+              <p className="mb-2 text-lg sm:text-sm">Dosen Pengampu:</p>
+              <ul className="list-disc list-inside text-lg sm:text-sm">
                 <li>Diyanatul Husna, M.T.</li>
                 <li>Elvian Syafrurizal, M.T.</li>
               </ul>
@@ -159,11 +171,11 @@ export default function Content() {
 
             {/* Komponen Penilaian */}
             <div className="bg-gray-900 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
-              <h3 className="text-2xl font-semibold mb-4">Komponen Penilaian</h3>
-              <p className="mb-2">
+              <h3 className="text-2xl sm:text-xl font-semibold mb-4">Komponen Penilaian</h3>
+              <p className="mb-2 text-lg sm:text-sm">
                 Praktikum ini terdiri dari beberapa bagian per modul. Bobot penilaian modul pada umumnya memiliki komponen sebagai berikut:
               </p>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside text-lg sm:text-sm">
                 <li>[20%] Tugas Pendahuluan</li>
                 <li>[10%] Kuis Pendahuluan</li>
                 <li>[40%] Case Study</li>
@@ -180,25 +192,31 @@ export default function Content() {
         className="snap-start flex flex-col justify-center items-center bg-gray-700 text-white h-screen"
         onMouseEnter={() => setCurrentPage('os')}
       >
-        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
-          {/* Logo */}
-          <img
-            src={OSLogo}
-            alt="OS Logo"
-            className="h-40 logo-hover"
-            onClick={() => handleNavigation('#os')} // Navigasi ke OS
-          />
+        {/* Logo */}
+        <img
+          src={OSLogo}
+          alt="OS Logo"
+          className="h-40 logo-hover mb-4"
+          onClick={() => handleNavigation('#os')} // Navigasi ke OS
+        />
 
+        {/* Judul */}
+        <h2 className="text-center text-4xl sm:text-2xl font-bold mb-6">
+          {typewriterText}
+          <span className="blinking-cursor">|</span>
+        </h2>
+
+        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 max-w-5xl">
           {/* Teks Box */}
           <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 w-full">
             {/* Keterangan */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
-              <h3 className="text-2xl font-semibold mb-4">Keterangan</h3>
-              <p className="mb-2">Kode MK: ENCE604018</p>
-              <p className="mb-2">Semester: 4</p>
-              <p className="mb-2">Jumlah SKS: 3 SKS</p>
-              <p className="mb-2">Dosen Pengampu:</p>
-              <ul className="list-disc list-inside">
+              <h3 className="text-2xl sm:text-xl font-semibold mb-4">Keterangan</h3>
+              <p className="mb-2 text-lg sm:text-sm">Kode MK: ENCE604018</p>
+              <p className="mb-2 text-lg sm:text-sm">Semester: 4</p>
+              <p className="mb-2 text-lg sm:text-sm">Jumlah SKS: 3 SKS</p>
+              <p className="mb-2 text-lg sm:text-sm">Dosen Pengampu:</p>
+              <ul className="list-disc list-inside text-lg sm:text-sm">
                 <li>I Gde Dharma Nugraha, S.T., M.T., Ph.D.</li>
                 <li>Yan Maraden, S.T., M.T.</li>
               </ul>
@@ -206,11 +224,11 @@ export default function Content() {
 
             {/* Komponen Penilaian */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-md w-full md:w-1/2 text-left">
-              <h3 className="text-2xl font-semibold mb-4">Komponen Penilaian</h3>
-              <p className="mb-2">
+              <h3 className="text-2xl sm:text-xl font-semibold mb-4">Komponen Penilaian</h3>
+              <p className="mb-2 text-lg sm:text-sm">
                 Praktikum ini terdiri dari beberapa bagian per modul. Bobot penilaian modul pada umumnya memiliki komponen sebagai berikut:
               </p>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside text-lg sm:text-sm">
                 <li>[20%] Tugas Pendahuluan</li>
                 <li>[50%] Case Study</li>
                 <li>[30%] Tugas Tambahan</li>
